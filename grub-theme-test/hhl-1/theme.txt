@@ -1,0 +1,56 @@
+message-font: "DejaVu Sans Regular 12"
+message-color: "#000"
+#terminal-box: "terminal_*.png"
+terminal-font: "Fixed Regular 13"
+terminal-font: "DejaVu Sans Regular 12"
+#desktop-image: "logo.png"
+# desktop-image: "background.jpg"
+desktop-color: "black"
+#desktop-image-scale-method: "crop"
+#desktop-image-h-align: "center"
+#desktop-image-v-align: "center"
+title-text: ""
+
+ # Show the boot menu
+ + boot_menu {
+	left = 15%
+	top = 27%
+	width = 68%
+	height = 42%
+	font = "DejaVu Sans Regular 12"
+	item_color = "#fff"
+	selected_item_color = "#f70"
+	item_height = 32
+	item_padding = 2
+	item_spacing = 2
+	icon_width = 32
+	icon_height = 32
+	icon_spacing = 25
+#	menu_pixmap_style = "menu_bkg_*.png"
+}
+
+# Show logo above of the menue
++canvas {
+	top= 2%-55
+	left= 50%-316
+	width= 632
+	height= 110
+	+ image {
+		width= 632
+		height= 110
+		file = "logo.png"
+	}
+}
+
+# Show an informational message below the boot menu
+ + vbox {
+	left = 25%
+	top = 75%
+	+ label { text = "- Press the UP and DOWN arrow keys to highlight an entry" color = "#E6DDD5" font = "DejaVu Sans Regular 10" }
+	+ label { text = "- Press the ENTER key to boot the highlighted entry" color = "#E6DDD5" font = "DejaVu Sans Regular 10" }
+	+ label { text = "- Press 'e' to edit the commands of the highlighted entry" color = "#E6DDD5" font = "DejaVu Sans Regular 10" }
+	+ label { text = "- Press 'c' for the GRUB command-line" color = "#E6DDD5" font = "DejaVu Sans Regular 10" }
+}
+
+# Show text-style countdown
+ + label { id = "__timeout__" text = "%d" align = "center" color = "#f70" font = "DejaVu Sans Bold 14" left = 50%-3 top= 85%-3 }
