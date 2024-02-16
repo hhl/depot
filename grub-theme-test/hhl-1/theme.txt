@@ -3,12 +3,7 @@ message-color: "#000"
 #terminal-box: "terminal_*.png"
 terminal-font: "Fixed Regular 13"
 terminal-font: "DejaVu Sans Regular 12"
-#desktop-image: "logo.png"
-# desktop-image: "background.jpg"
 desktop-color: "black"
-#desktop-image-scale-method: "crop"
-#desktop-image-h-align: "center"
-#desktop-image-v-align: "center"
 title-text: ""
 
  # Show the boot menu
